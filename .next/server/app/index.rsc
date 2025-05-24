@@ -1,0 +1,24 @@
+1:"$Sreact.fragment"
+2:I[9304,["177","static/chunks/app/layout-162acbfae48a646d.js"],"ThemeProvider"]
+3:I[7555,[],""]
+4:I[1295,[],""]
+5:I[4865,["352","static/chunks/352-c63587afa232ff5e.js","974","static/chunks/app/page-1f2df79b5c9e4428.js"],"default"]
+6:I[1555,["352","static/chunks/352-c63587afa232ff5e.js","974","static/chunks/app/page-1f2df79b5c9e4428.js"],"default"]
+7:I[5810,["352","static/chunks/352-c63587afa232ff5e.js","974","static/chunks/app/page-1f2df79b5c9e4428.js"],"default"]
+8:I[5329,["352","static/chunks/352-c63587afa232ff5e.js","974","static/chunks/app/page-1f2df79b5c9e4428.js"],"default"]
+9:I[9767,["352","static/chunks/352-c63587afa232ff5e.js","974","static/chunks/app/page-1f2df79b5c9e4428.js"],"default"]
+a:I[1350,["352","static/chunks/352-c63587afa232ff5e.js","974","static/chunks/app/page-1f2df79b5c9e4428.js"],"default"]
+b:I[9588,["352","static/chunks/352-c63587afa232ff5e.js","974","static/chunks/app/page-1f2df79b5c9e4428.js"],"default"]
+c:I[5747,["352","static/chunks/352-c63587afa232ff5e.js","974","static/chunks/app/page-1f2df79b5c9e4428.js"],"default"]
+d:I[6055,["352","static/chunks/352-c63587afa232ff5e.js","974","static/chunks/app/page-1f2df79b5c9e4428.js"],"default"]
+e:I[7746,["352","static/chunks/352-c63587afa232ff5e.js","974","static/chunks/app/page-1f2df79b5c9e4428.js"],"default"]
+f:I[9665,[],"OutletBoundary"]
+12:I[9665,[],"ViewportBoundary"]
+14:I[9665,[],"MetadataBoundary"]
+16:I[6614,[],""]
+:HL["/_next/static/css/e34a5eb3c6fed406.css","style"]
+0:{"P":null,"b":"qNWzPrSC78juyyBR9Qryb","p":"","c":["",""],"i":false,"f":[[["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e34a5eb3c6fed406.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":["$","body",null,{"className":"__variable_d65c78 __variable_bc0dcf font-sans","children":["$","$L2",null,{"attribute":"class","defaultTheme":"dark","enableSystem":true,"disableTransitionOnChange":true,"children":["$","$L3",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L4",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","main",null,{"className":"min-h-screen bg-gradient-to-b from-background to-background/80 overflow-hidden","children":[["$","div",null,{"className":"fixed inset-0 bg-[url('/grid.png')] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"}],["$","$L5",null,{}],["$","$L6",null,{}],["$","$L7",null,{}],["$","$L8",null,{}],["$","$L9",null,{}],["$","$La",null,{}],["$","$Lb",null,{}],["$","$Lc",null,{}],["$","$Ld",null,{}],["$","$Le",null,{}]]}],"$undefined",null,["$","$Lf",null,{"children":["$L10","$L11",null]}]]}],{},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","vTTagmbuqMvpgu44InoOn",{"children":[["$","$L12",null,{"children":"$L13"}],null]}],["$","$L14",null,{"children":"$L15"}]]}],false]],"m":"$undefined","G":["$16","$undefined"],"s":false,"S":true}
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+10:null
+11:null
+15:[["$","title","0",{"children":"Andika Bintang Nursalih | Fullstack Developer & Machine Learning Engineer"}],["$","meta","1",{"name":"description","content":"Portfolio of Andika Bintang Nursalih - Fullstack Developer and Machine Learning Engineer"}],["$","meta","2",{"name":"generator","content":"v0.dev"}]]
