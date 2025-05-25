@@ -66,7 +66,7 @@ export default function Hero() {
                 </Link>
               </Button>
               <Button asChild className="rounded-full">
-                <Link href="/resume.pdf" target="_blank">
+                <Link href="/CV_SAYA_ASLI.pdf" target="_blank">
                   <Download className="mr-2 h-4 w-4" />
                   Resume
                 </Link>
