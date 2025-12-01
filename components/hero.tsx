@@ -115,7 +115,7 @@ export default function Hero() {
               </div>
               <div className="absolute -bottom-4 -right-4 bg-background/80 backdrop-blur-sm border border-border rounded-lg p-3 shadow-lg">
                 <div className="text-sm font-medium">Experience</div>
-                <div className="text-2xl font-bold text-cyan-500">2+ Years</div>
+                <div className="text-2xl font-bold text-cyan-500">3+ Years</div>
               </div>
             </div>
           </motion.div>
