@@ -3,32 +3,50 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { Code, Server, Brain, Lightbulb, Clock, Search, MessageSquare, Database } from "lucide-react"
+import { Brain, Clock, Code, Database, Lightbulb, RefreshCw, Search, Server, Smartphone, Users, Wrench } from "lucide-react"
 
-const technicalSkills = [
+const skillGroups = [
   {
-    name: "Frontend Development",
-    description: "React.js, Next.js, Flutter, Tailwind CSS",
-    icon: <Code className="w-6 h-6" />,
-    color: "from-blue-500 to-cyan-400",
+    name: "Mobile",
+    description: "Flutter, Dart, responsive mobile interfaces",
+    icon: <Smartphone className="h-6 w-6" />,
+    accent: "bg-primary",
+    skills: ["Flutter", "Dart", "Mobile UI"],
   },
   {
-    name: "Backend Development",
+    name: "Frontend",
+    description: "React.js, Next.js, Tailwind CSS",
+    icon: <Code className="h-6 w-6" />,
+    accent: "bg-secondary",
+    skills: ["React.js", "Next.js", "Tailwind CSS"],
+  },
+  {
+    name: "Backend",
     description: "Laravel, PHP, Express.js, Node.js",
-    icon: <Server className="w-6 h-6" />,
-    color: "from-indigo-500 to-blue-500",
+    icon: <Server className="h-6 w-6" />,
+    accent: "bg-accent",
+    skills: ["Laravel", "PHP", "Express.js", "Node.js"],
   },
   {
-    name: "Machine Learning",
-    description: "TensorFlow, PyTorch, Keras, Scikit-Learn",
-    icon: <Brain className="w-6 h-6" />,
-    color: "from-orange-500 to-amber-400",
+    name: "Data & ML",
+    description: "Python-based ML workflows and model experiments",
+    icon: <Brain className="h-6 w-6" />,
+    accent: "bg-[#FF6B6B]",
+    skills: ["Python", "TensorFlow", "PyTorch", "Keras", "Scikit-Learn"],
   },
   {
-    name: "Programming Languages",
-    description: "Dart, PHP, JavaScript, Python",
-    icon: <Database className="w-6 h-6" />,
-    color: "from-purple-500 to-pink-500",
+    name: "Database",
+    description: "Data modeling for web and mobile apps",
+    icon: <Database className="h-6 w-6" />,
+    accent: "bg-white",
+    skills: ["MySQL", "API data flow", "CRUD systems", "MongoDB"],
+  },
+  {
+    name: "Tools",
+    description: "Delivery, collaboration, and product handoff",
+    icon: <Wrench className="h-6 w-6" />,
+    accent: "bg-primary",
+    skills: ["Git", "GitHub", "VS Code"],
   },
 ]
 
@@ -44,6 +62,14 @@ const softSkills = [
   {
     name: "Time Management",
     icon: <Clock className="w-5 h-5" />,
+  },
+  {
+    name: "Teamwork",
+    icon: <Users className="w-5 h-5" />,
+  },
+  {
+    name: "Adaptability",
+    icon: <RefreshCw className="w-5 h-5" />,
   },
 ]
 
@@ -71,47 +97,56 @@ export default function Skills() {
   }
 
   return (
-    <section id="skills" className="py-16 md:py-24 relative">
-      <div className="absolute top-0 right-0 w-72 h-72 bg-purple-600/20 rounded-full blur-3xl -z-10"></div>
-      <div className="absolute bottom-0 left-0 w-72 h-72 bg-cyan-500/20 rounded-full blur-3xl -z-10"></div>
-
+    <section id="skills" className="neo-dark-section relative border-b-2 border-black bg-background py-16 md:py-24">
       <div className="container mx-auto px-4">
         <motion.div
           ref={ref}
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="max-w-5xl mx-auto"
+          className="mx-auto max-w-6xl"
         >
-          <motion.div variants={itemVariants} className="mb-16 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold font-space mb-4">Technical Expertise</h2>
-            <div className="w-20 h-1.5 bg-gradient-to-r from-cyan-500 to-purple-600 mx-auto rounded-full mb-6"></div>
-            <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
-              Fullstack Developer & Machine Learning Engineer with expertise in web and mobile development
+          <motion.div variants={itemVariants} className="mb-12 max-w-3xl">
+            <div className="mb-4 inline-block border-2 border-black bg-secondary px-3 py-1 text-sm font-black text-black shadow-[3px_3px_0px_#000]">
+              Skills
+            </div>
+            <h2 className="neo-dark-text mb-4 font-space text-4xl font-black leading-tight text-black md:text-5xl">
+              Technical Expertise
+            </h2>
+            <p className="neo-dark-text text-lg font-medium leading-8 text-black">
+              Fullstack Developer and Machine Learning Engineer with practical experience across mobile,
+              web, backend, and model experimentation.
             </p>
           </motion.div>
 
-          <motion.div variants={containerVariants} className="mb-16">
-            <motion.h3 variants={itemVariants} className="text-2xl font-bold mb-8 text-center">
+          <motion.div variants={containerVariants} className="mb-14">
+            <motion.h3 variants={itemVariants} className="neo-dark-text mb-6 font-space text-2xl font-black text-black">
               Technical Skills
             </motion.h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {technicalSkills.map((skill, index) => (
+            <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+              {skillGroups.map((skill) => (
                 <motion.div
                   key={skill.name}
                   variants={itemVariants}
-                  whileHover={{ y: -5, transition: { duration: 0.2 } }}
-                  className="relative group"
+                  whileHover={{ x: 2, y: 2, transition: { duration: 0.2 } }}
+                  className="neo-dark-surface neo-dark-hover border-2 border-black bg-white p-5 text-black shadow-[6px_6px_0px_#000] transition hover:shadow-[3px_3px_0px_#000]"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r opacity-0 group-hover:opacity-100 blur transition-opacity duration-300 rounded-xl"></div>
-                  <div className="relative p-6 rounded-xl border border-border bg-background/80 backdrop-blur-sm h-full flex flex-col">
-                    <div
-                      className={`w-12 h-12 rounded-lg bg-gradient-to-r ${skill.color} flex items-center justify-center mb-4`}
-                    >
+                  <div className="mb-4 flex items-start justify-between gap-4">
+                    <div className={`flex h-12 w-12 items-center justify-center border-2 border-black ${skill.accent}`}>
                       {skill.icon}
                     </div>
-                    <h4 className="text-xl font-bold mb-2">{skill.name}</h4>
-                    <p className="text-foreground/70">{skill.description}</p>
+                    <span className="border-2 border-black bg-muted px-2 py-1 text-xs font-black">
+                      {skill.skills.length} tools
+                    </span>
+                  </div>
+                  <h4 className="mb-2 text-xl font-black">{skill.name}</h4>
+                  <p className="mb-4 font-medium leading-7">{skill.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {skill.skills.map((item) => (
+                      <span key={item} className="border border-black bg-muted px-2.5 py-1 text-sm font-bold">
+                        {item}
+                      </span>
+                    ))}
                   </div>
                 </motion.div>
               ))}
@@ -119,21 +154,21 @@ export default function Skills() {
           </motion.div>
 
           <motion.div variants={containerVariants}>
-            <motion.h3 variants={itemVariants} className="text-2xl font-bold mb-8 text-center">
+            <motion.h3 variants={itemVariants} className="neo-dark-text mb-6 font-space text-2xl font-black text-black">
               Soft Skills
             </motion.h3>
-            <div className="flex justify-center gap-4 flex-wrap">
+            <div className="flex flex-wrap gap-4">
               {softSkills.map((skill) => (
                 <motion.div
                   key={skill.name}
                   variants={itemVariants}
-                  whileHover={{ scale: 1.05 }}
-                  className="p-4 rounded-xl border border-border bg-accent/10 flex items-center gap-3"
+                  whileHover={{ x: 2, y: 2 }}
+                  className="neo-dark-accent-panel flex items-center gap-3 border-2 border-black bg-primary p-4 text-black shadow-[4px_4px_0px_#000] transition hover:shadow-[2px_2px_0px_#000]"
                 >
-                  <div className="w-10 h-10 rounded-full bg-accent/30 flex items-center justify-center">
+                  <div className="flex h-10 w-10 items-center justify-center border-2 border-black bg-white">
                     {skill.icon}
                   </div>
-                  <span className="font-medium">{skill.name}</span>
+                  <span className="font-black">{skill.name}</span>
                 </motion.div>
               ))}
             </div>

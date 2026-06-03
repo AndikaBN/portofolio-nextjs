@@ -28,30 +28,32 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="py-16 md:py-24 relative">
+    <section id="about" className="neo-dark-section-muted relative border-b-2 border-black bg-muted py-16 md:py-24">
       <div className="container mx-auto px-4">
         <motion.div
           ref={ref}
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="max-w-4xl mx-auto"
+          className="mx-auto max-w-6xl"
         >
-          <motion.div variants={itemVariants} className="mb-12 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold font-space mb-4">
+          <motion.div variants={itemVariants} className="mb-12">
+            <div className="mb-4 inline-block border-2 border-black bg-primary px-3 py-1 text-sm font-black text-black shadow-[3px_3px_0px_#000]">
+              About
+            </div>
+            <h2 className="neo-dark-text font-space text-4xl font-black leading-tight text-black md:text-5xl">
               About Me
             </h2>
-            <div className="w-20 h-1.5 bg-gradient-to-r from-cyan-500 to-purple-600 mx-auto rounded-full"></div>
           </motion.div>
 
           <motion.div
             variants={itemVariants}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center"
+            className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[1.2fr_0.8fr]"
           >
-            <div className="col-span-1 md:col-span-2">
+            <div className="neo-dark-surface border-2 border-black bg-white p-6 shadow-[6px_6px_0px_#000] md:p-8">
               <motion.p
                 variants={itemVariants}
-                className="text-lg mb-4 text-foreground/80"
+                className="neo-dark-text mb-5 text-lg font-medium leading-8 text-black"
               >
                 I am an Information Technology student with experience in
                 organizing and training in technology. Have expertise in
@@ -60,7 +62,7 @@ export default function About() {
               </motion.p>
               <motion.p
                 variants={itemVariants}
-                className="text-lg mb-4 text-foreground/80"
+                className="neo-dark-text mb-5 text-lg font-medium leading-8 text-black"
               >
                 Proficient in Mobile Development using Flutter, as well as
                 Laravel using Bootstrap and Tailwind frameworks as Fullstack
@@ -69,43 +71,51 @@ export default function About() {
               </motion.p>
               <motion.p
                 variants={itemVariants}
-                className="text-lg text-foreground/80"
+                className="neo-dark-text text-lg font-medium leading-8 text-black"
               >
                 With my dedication to
                 continuous learning and improving, I am ready to take on new
                 challenges and contribute to future technological developments.
               </motion.p>
+
+              {/* <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+                {["Mobile-first UI", "Laravel + APIs", "Team training"].map((item) => (
+                  <div key={item} className="border-2 border-black bg-accent px-4 py-3 text-sm font-black text-black">
+                    {item}
+                  </div>
+                ))}
+              </div> */}
             </div>
 
             <motion.div
               variants={itemVariants}
-              className="relative p-6 rounded-2xl border border-border bg-accent/10 backdrop-blur-sm"
+              className="neo-dark-accent-panel relative border-2 border-black bg-primary p-6 text-black shadow-[6px_6px_0px_#000]"
             >
-              <div className="absolute -top-3 -left-3 w-6 h-6 rounded-full bg-cyan-500"></div>
-              <div className="absolute -bottom-3 -right-3 w-6 h-6 rounded-full bg-purple-600"></div>
+              <div className="absolute -left-3 -top-3 h-6 w-6 border-2 border-black bg-secondary"></div>
+              <div className="absolute -bottom-3 -right-3 h-6 w-6 border-2 border-black bg-accent"></div>
 
-              <h3 className="text-xl font-bold mb-4">Personal Info</h3>
+              <h3 className="mb-5 font-space text-2xl font-black">Personal Info</h3>
 
-              <div className="space-y-3">
-                <div>
-                  <span className="text-sm text-foreground/60">Name</span>
-                  <p className="font-medium">Andika Bintang Nursalih</p>
+              <div className="space-y-4">
+                <div className="border-b-2 border-black pb-3">
+                  <span className="text-xs font-black uppercase">Name</span>
+                  <p className="font-bold">Andika Bintang Nursalih</p>
+                </div>
+                <div className="border-b-2 border-black pb-3">
+                  <span className="text-xs font-black uppercase">Email</span>
+                  <p className="break-words font-bold">bintangnursalih275@gmail.com</p>
+                </div>
+                <div className="border-b-2 border-black pb-3">
+                  <span className="text-xs font-black uppercase">Phone</span>
+                  <p className="font-bold">+62 82340058195</p>
+                </div>
+                <div className="border-b-2 border-black pb-3">
+                  <span className="text-xs font-black uppercase">Location</span>
+                  <p className="font-bold">Nusa Tenggara Barat, Indonesia</p>
                 </div>
                 <div>
-                  <span className="text-sm text-foreground/60">Email</span>
-                  <p className="font-medium">bintangnursalih275@gmail.com</p>
-                </div>
-                <div>
-                  <span className="text-sm text-foreground/60">Phone</span>
-                  <p className="font-medium">+62 82340058195</p>
-                </div>
-                <div>
-                  <span className="text-sm text-foreground/60">Location</span>
-                  <p className="font-medium">Nusa Tenggara Barat, Indonesia</p>
-                </div>
-                <div>
-                  <span className="text-sm text-foreground/60">Education</span>
-                  <p className="font-medium">Bumigora University</p>
+                  <span className="text-xs font-black uppercase">Education</span>
+                  <p className="font-bold">Bumigora University</p>
                 </div>
               </div>
             </motion.div>

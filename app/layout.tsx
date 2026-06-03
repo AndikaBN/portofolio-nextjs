@@ -10,7 +10,6 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space
 export const metadata: Metadata = {
   title: "Andika Bintang Nursalih | Fullstack Developer & Machine Learning Engineer",
   description: "Portfolio of Andika Bintang Nursalih - Fullstack Developer and Machine Learning Engineer",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -24,7 +23,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
       <body className={`${inter.variable} ${spaceGrotesk.variable} font-sans`}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
       </body>

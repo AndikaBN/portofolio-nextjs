@@ -87,50 +87,54 @@ export default function Experience() {
   }
 
   return (
-    <section id="experience" className="py-16 md:py-24 relative">
+    <section id="experience" className="neo-dark-section-muted relative border-b-2 border-black bg-muted py-16 md:py-24">
       <div className="container mx-auto px-4">
         <motion.div
           ref={ref}
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
-          className="max-w-5xl mx-auto"
+          className="mx-auto max-w-6xl"
         >
-          <motion.div variants={itemVariants} className="mb-16 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold font-space mb-4">Experience</h2>
-            <div className="w-20 h-1.5 bg-gradient-to-r from-cyan-500 to-purple-600 mx-auto rounded-full mb-6"></div>
-            <p className="text-lg text-foreground/80 max-w-2xl mx-auto">
+          <motion.div variants={itemVariants} className="mb-12 max-w-3xl">
+            <div className="mb-4 inline-block border-2 border-black bg-accent px-3 py-1 text-sm font-black text-black shadow-[3px_3px_0px_#000]">
+              Experience
+            </div>
+            <h2 className="neo-dark-text mb-4 font-space text-4xl font-black leading-tight text-black md:text-5xl">
+              Work, Community, and Project Delivery
+            </h2>
+            <p className="neo-dark-text text-lg font-medium leading-8 text-black">
               My professional journey and projects that have shaped my skills and expertise.
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             <motion.div variants={containerVariants} className="space-y-6">
-              <motion.h3 variants={itemVariants} className="text-2xl font-bold flex items-center gap-2">
-                <Users className="w-6 h-6 text-cyan-500" />
+              <motion.h3 variants={itemVariants} className="neo-dark-surface flex items-center gap-3 border-2 border-black bg-white px-4 py-3 font-space text-2xl font-black text-black shadow-[4px_4px_0px_#000]">
+                <Users className="h-6 w-6" />
                 Organizations
               </motion.h3>
 
               <div className="space-y-6">
                 {experiences
                   .filter((exp) => exp.type === "organization")
-                  .map((exp, index) => (
+                  .map((exp) => (
                     <motion.div
                       key={exp.title}
                       variants={itemVariants}
-                      className="relative pl-6 border-l-2 border-border"
+                      className="neo-dark-surface relative border-2 border-black bg-white p-5 text-black shadow-[6px_6px_0px_#000]"
                     >
-                      <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-cyan-500"></div>
-                      <div className="mb-1 flex items-center gap-2">
-                        <Calendar className="w-4 h-4 text-foreground/60" />
-                        <span className="text-sm text-foreground/60">{exp.period}</span>
+                      <div className="absolute -left-3 top-5 h-6 w-6 border-2 border-black bg-secondary"></div>
+                      <div className="mb-3 inline-flex items-center gap-2 border-2 border-black bg-muted px-3 py-1 text-sm font-black">
+                        <Calendar className="h-4 w-4" />
+                        <span>{exp.period}</span>
                       </div>
-                      <h4 className="text-xl font-bold">{exp.title}</h4>
-                      <p className="text-foreground/80 font-medium mb-2">{exp.position}</p>
-                      <ul className="space-y-1">
+                      <h4 className="mb-2 text-xl font-black leading-tight">{exp.title}</h4>
+                      <p className="mb-4 font-bold">{exp.position}</p>
+                      <ul className="space-y-3">
                         {exp.description.map((item, i) => (
-                          <li key={i} className="text-foreground/70 flex items-start gap-2">
-                            <span className="text-cyan-500 mt-1">•</span>
+                          <li key={i} className="flex items-start gap-3 font-medium leading-7">
+                            <span className="mt-2 h-2 w-2 shrink-0 border border-black bg-secondary"></span>
                             <span>{item}</span>
                           </li>
                         ))}
@@ -141,31 +145,31 @@ export default function Experience() {
             </motion.div>
 
             <motion.div variants={containerVariants} className="space-y-6">
-              <motion.h3 variants={itemVariants} className="text-2xl font-bold flex items-center gap-2">
-                <Briefcase className="w-6 h-6 text-purple-500" />
+              <motion.h3 variants={itemVariants} className="neo-dark-surface flex items-center gap-3 border-2 border-black bg-white px-4 py-3 font-space text-2xl font-black text-black shadow-[4px_4px_0px_#000]">
+                <Briefcase className="h-6 w-6" />
                 Projects
               </motion.h3>
 
               <div className="space-y-6">
                 {experiences
                   .filter((exp) => exp.type === "project")
-                  .map((exp, index) => (
+                  .map((exp) => (
                     <motion.div
                       key={exp.title}
                       variants={itemVariants}
-                      className="relative pl-6 border-l-2 border-border"
+                      className="neo-dark-surface relative border-2 border-black bg-white p-5 text-black shadow-[6px_6px_0px_#000]"
                     >
-                      <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-500"></div>
-                      <div className="mb-1 flex items-center gap-2">
-                        <Calendar className="w-4 h-4 text-foreground/60" />
-                        <span className="text-sm text-foreground/60">{exp.period}</span>
+                      <div className="absolute -left-3 top-5 h-6 w-6 border-2 border-black bg-primary"></div>
+                      <div className="mb-3 inline-flex items-center gap-2 border-2 border-black bg-muted px-3 py-1 text-sm font-black">
+                        <Calendar className="h-4 w-4" />
+                        <span>{exp.period}</span>
                       </div>
-                      <h4 className="text-xl font-bold">{exp.title}</h4>
-                      <p className="text-foreground/80 font-medium mb-2">{exp.position}</p>
-                      <ul className="space-y-1">
+                      <h4 className="mb-2 text-xl font-black leading-tight">{exp.title}</h4>
+                      <p className="mb-4 font-bold">{exp.position}</p>
+                      <ul className="space-y-3">
                         {exp.description.map((item, i) => (
-                          <li key={i} className="text-foreground/70 flex items-start gap-2">
-                            <span className="text-purple-500 mt-1">•</span>
+                          <li key={i} className="flex items-start gap-3 font-medium leading-7">
+                            <span className="mt-2 h-2 w-2 shrink-0 border border-black bg-primary"></span>
                             <span>{item}</span>
                           </li>
                         ))}
