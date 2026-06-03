@@ -106,7 +106,7 @@ export default function Hero() {
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-500 to-purple-600 blur-3xl opacity-20 animate-pulse"></div>
               <div className="relative w-full h-full rounded-full border-2 border-cyan-500/30 overflow-hidden">
                 <Image
-                  src="/andika.png"
+                  src="/andika.webp"
                   alt="Andika Bintang Nursalih"
                   fill
                   className="object-cover"
