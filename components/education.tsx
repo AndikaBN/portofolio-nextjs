@@ -11,7 +11,7 @@ const education = [
     degree: "Bachelor of Information Technology",
     period: "September 2022 - Present",
     details: [
-      "GPA: 3.80/4.00",
+      "GPA: 3.79/4.00",
       "Relevant Courses: Web Design, Android, Web Programming, Mobile Programming."
     ],
   },

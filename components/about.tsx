@@ -55,12 +55,9 @@ export default function About() {
                 variants={itemVariants}
                 className="neo-dark-text mb-5 text-lg font-medium leading-8 text-black"
               >
-                I am an Information Technology student with experience in
-                organizing and training in technology. Have expertise in
-                managing projects and collaborating with teams in a dynamic
-                environment.
+                Final-year Information Technology student with hands-on experience in full-stack web and mobile development using Laravel, Flutter, React JS, REST API, and MySQL. Experienced in building collaborative digital projects, including admin systems, mobile interfaces, and user-facing web applications. Interested in creating practical technology solutions through product development, teamwork, problem-solving, and continuous learning.
               </motion.p>
-              <motion.p
+              {/* <motion.p
                 variants={itemVariants}
                 className="neo-dark-text mb-5 text-lg font-medium leading-8 text-black"
               >
@@ -76,7 +73,7 @@ export default function About() {
                 With my dedication to
                 continuous learning and improving, I am ready to take on new
                 challenges and contribute to future technological developments.
-              </motion.p>
+              </motion.p> */}
 
               {/* <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
                 {["Mobile-first UI", "Laravel + APIs", "Team training"].map((item) => (
