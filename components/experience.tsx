@@ -29,20 +29,20 @@ const experiences = [
     type: "organization",
   },
   {
-    title: "NUSANTARA UNIVERSAL EDUCATION (NUE) – Indonesia",
-    position: "Web Developer",
-    period: "March 2025 – April 2025",
+    title: "SAKUYA APPS",
+    position: "Flutter Developer",
+    period: "August 2025 – October 2025",
     description: [
-      "Developed a website to provide educational access for children in remote areas.",
-      "Implemented user-friendly interface and responsive design for optimal learning experience.",
-      "Collaborated with team to ensure smooth functionality and accessibility of the platform.",
+      "Developed and integrated the Sakuya mobile application frontend using Flutter.",
+      "Connected mobile interfaces with backend APIs to support reliable application data flow.",
+      "Implemented payment gateway functionality and ensured a smooth mobile user experience.",
     ],
     type: "project",
   },
   {
     title: "EXOTISCAN BANGKIT CAPSTONE PROJECT",
     position: "UI/UX Designer",
-    period: "February 2024 – July 2024",
+    period: "September 2024 – January 2025",
     description: [
       "Designed user interface and user experience for ExotiScan application using Figma.",
       "Created wireframes, mockups, and interactive prototypes for mobile application.",
@@ -53,7 +53,7 @@ const experiences = [
   {
     title: "MITRA ABADI APPS",
     position: "UI/UX Designer",
-    period: "January 2024 – March 2024",
+    period: "June 2024 – December 2024",
     description: [
       "Designed user interface for Mitra Abadi mobile application using Figma.",
       "Created comprehensive design system including components, typography, and color palette.",

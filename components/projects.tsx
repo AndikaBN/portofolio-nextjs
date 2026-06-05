@@ -56,6 +56,16 @@ const projects = [
       "Built a Laravel-based CMS and web platform for managing psychologist services, appointments, client data, APIs, routes, and secure admin workflows.",
     stack: ["Full-Stack Developer", "Laravel", "REST API", "CMS"],
     highlight: "Psychology service CMS",
+  },
+  {
+    title: "POS Application with Flutter",
+    category: "Mobile App",
+    images: ["/fic14.webp"],
+    description:
+      "Built a full-stack Flutter POS system with a Laravel dashboard, product and order synchronization, Bluetooth receipt printing, sales reports, charts, and PDF export.",
+    stack: ["Full-Stack Developer", "Flutter", "BLoC", "Laravel REST API", "MySQL"],
+    highlight: "Flutter-based POS app",
+    demoUrl: "https://www.youtube.com/watch?v=aIsydcacBq8&t=253s",
   }
 ]
 
@@ -146,6 +156,18 @@ export default function Projects() {
                     <div className="absolute left-3 top-3 border-2 border-black bg-primary px-2.5 py-1 text-xs font-black text-black shadow-[3px_3px_0px_#000]">
                       0{index + 1}
                     </div>
+
+                    {project.demoUrl && (
+                      <Link
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Open demo for ${project.title}`}
+                        className="absolute right-3 top-3 flex h-9 w-9 items-center justify-center border-2 border-black bg-primary text-black opacity-100 shadow-[3px_3px_0px_#000] transition hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[1px_1px_0px_#000] focus:opacity-100 md:opacity-0 md:group-hover:opacity-100"
+                      >
+                        <ArrowUpRight className="h-5 w-5" />
+                      </Link>
+                    )}
 
                     {hasMultipleImages && (
                       <>

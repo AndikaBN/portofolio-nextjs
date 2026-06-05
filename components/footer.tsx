@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
-import { Linkedin, Mail } from "lucide-react"
+import { Github, Linkedin } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -47,11 +47,13 @@ export default function Footer() {
               <span className="sr-only">LinkedIn</span>
             </Link>
             <Link
-              href="mailto:bintangnursalih275@gmail.com"
+              href="https://github.com/andikabintang"
+              target="_blank"
+              rel="noopener noreferrer"
               className="neo-dark-control border-2 border-black bg-white p-2 shadow-[3px_3px_0px_#000] transition hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-[1px_1px_0px_#000]"
             >
-              <Mail className="h-5 w-5" />
-              <span className="sr-only">Email</span>
+              <Github className="h-5 w-5" />
+              <span className="sr-only">GitHub</span>
             </Link>
           </motion.div>
         </div>
